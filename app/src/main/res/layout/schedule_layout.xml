@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginEnd="7dp"
+    app:cardCornerRadius="7dp"
+
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/delete_schedule"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="5dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="17sp"
+                android:text="Schedule title"
+
+                android:id="@+id/schedule_layout_title"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/schedule_layout_date"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/schedule_layout_title"
+
+
+                android:text="Schedule Date"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/schedule_priority"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/ic_error_outline_black_24dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_close_black_24dp"
+            android:layout_toStartOf="@id/schedule_priority"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/delete_button_selector"
+            android:id="@+id/delete_schedule"
+            android:contentDescription="@string/delete_schedule"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

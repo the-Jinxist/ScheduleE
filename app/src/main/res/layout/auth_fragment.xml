@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+
+        >
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/account_frag_image"
+            android:layout_centerInParent="true"
+
+            app:srcCompat="@drawable/ic_people_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signing in will save your schedules to an online database"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/account_frag_image"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/text_bg"
+        android:text="SIGN IN"
+        android:gravity="center"
+        android:id="@+id/sign_in"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_above="@id/sign_in"
+        app:lottie_fileName="pumped_up.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:scaleType="centerInside"
+        />
+
+
+
+
+</RelativeLayout>

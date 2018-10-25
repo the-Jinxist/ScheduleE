@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/add_schedule_fab"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        android:tint="@color/colorPrimary"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/schedule_recycler_view"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_layout"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_hourglass_empty_black_24dp"
+            android:tint="#ccc"
+            android:id="@+id/empty_image"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="You have no schedules... For now!"
+            android:gravity="center"
+            android:textColor="#9c9c9c"
+            android:layout_below="@id/empty_anim"
+            android:textSize="17sp"
+            android:visibility="visible"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_loop="false"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            android:id="@+id/empty_anim"
+            android:scaleType="centerInside"
+            app:lottie_fileName="empty_box.json"
+            android:layout_margin="20dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

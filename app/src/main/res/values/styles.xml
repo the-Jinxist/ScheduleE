@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimaryInverse">@android:color/background_dark</item>
+        <item name="android:textColorSecondary">#000</item>
+        <item name="android:textColorSecondaryInverse">#000</item>
+
+
+    </style>
+
+    <style name="SplashStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#c2ab2c23</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@drawable/eschedulerbg</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <style name="AddScheduleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">casual</item>
+
+        <item name="android:textColorPrimaryInverse">@android:color/background_dark</item>
+        <item name="android:textColorSecondary">#000</item>
+        <item name="android:textColorSecondaryInverse">#000</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_top</item>
+        <item name="android:windowExitTransition">@android:transition/slide_bottom</item>
+
+    </style>
+
+    <style name="BottomNavigationSchedule" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorAccent</item>
+    </style>
+
+</resources>

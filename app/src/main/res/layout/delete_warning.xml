@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:text="Are you sure you want to delete all your schedules?"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorAccent"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/priorities_drawable"
+                android:textColor="#000"
+                android:id="@+id/delete_warning_sure"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="SURE!"
+                />
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="100dp"
+                android:layout_toEndOf="@id/delete_warning_sure"
+                android:gravity="center"
+                android:text="NOPE!"
+                android:id="@+id/delete_warning_nope"
+                android:textColor="#000"
+                android:background="@drawable/priorities_drawable"
+                android:layout_marginStart="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
